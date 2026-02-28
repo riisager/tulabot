@@ -187,21 +187,7 @@ h1 {
   padding-right: 1.5rem;
 }
 
-.clients-only-section {
-  width: 100%;
-  margin-top: 4rem;
-  padding-top: 4rem;
-  border-top: 1px solid rgba(0, 0, 0, 0.05);
-}
 
-.clients-only-section h2 {
-  font-size: 2.2rem;
-  font-weight: 800;
-  text-align: center;
-  margin-bottom: 3rem;
-  color: var(--primary);
-  letter-spacing: -0.03em;
-}
 
 .footer {
   margin-top: 5rem;
