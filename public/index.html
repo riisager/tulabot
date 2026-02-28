@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Riisager's ToolBox</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://www.tulabot.com/" />
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 512 512' style='enable-background:new 0 0 512 512;' xml:space='preserve'%3E%3Cpath style='fill:%23E54728;' d='M476.101,285.422c0-25.654-17.094-47.344-40.51-54.26h-5.689v108.588h5.689v-0.063C459.01,332.758,476.101,311.083,476.101,285.422z'/%3E%3Cpath style='fill:%23F95428;' d='M435.591,285.435v45.659c0,2.898-0.067,5.783-0.202,8.655c-2.75,58.008-33.028,108.803-78.04,139.634c-0.391,0.283-0.795,0.539-1.186,0.809c-28.606,19.251-63.063,30.494-100.162,30.494s-71.556-11.243-100.176-30.494c-0.377-0.27-0.782-0.526-1.173-0.809c-45.026-30.831-75.304-81.626-78.054-139.634c-0.135-2.871-0.202-5.756-0.202-8.655v-45.659v-54.274v-50.243c0-8.439,0.58-16.743,1.712-24.872c9.666,7.428,39.35-71.448,28.957-75.546C139.351,32.725,194.002,1.314,256,1.314c49.596,0,94.5,20.1,126.989,52.602c8.129,8.129,15.476,17.026,21.933,26.584v0.013c-10.394,4.098,19.305,82.961,28.957,75.533c1.132,8.129,1.712,16.433,1.712,24.872v50.243V285.435z'/%3E%3Cpath style='fill:%23E54728;' d='M211.078,480.192c-0.377-0.27-0.782-0.539-1.173-0.822c-45.012-30.817-75.304-81.626-78.054-139.62c-0.135-2.871-0.202-5.756-0.202-8.655v-45.673v-54.26v-22.095v-28.148c0-49.987,20.423-95.215,53.384-127.771c26.232-25.915,60.411-43.811,98.554-49.709C274.586,2.042,265.379,1.314,256,1.314c-49.205,0-93.786,19.79-126.221,51.834c-32.961,32.556-53.384,77.784-53.384,127.771v28.148v22.095c-23.416,6.916-40.51,28.606-40.51,54.26c0,25.735,17.188,47.466,40.712,54.328c2.75,57.994,33.041,108.803,78.054,139.62c0.391,0.283,0.795,0.553,1.173,0.822c28.62,19.251,63.077,30.494,100.176,30.494c9.396,0,18.621-0.728,27.628-2.118C257.077,504.471,232.449,494.567,211.078,480.192z'/%3E%3Cg%3E%3Cpath style='fill:%23FCD69A;' d='M175.466,135.017v0.526c0,8.277-2.157,15.853-5.864,22.338c-11.162,19.561-36.344,29.226-58.79,18.334c-12.187-5.918-23.039-12.739-32.704-20.167C2.575,97.972,0,2.487,0,2.487s0,0.013,0.027,0.04c1.132,1.523,37.827,50.742,107.037,77.973c10.394,4.098,21.529,7.698,33.392,10.569C160.893,96.003,175.466,114,175.466,135.017z'/%3E%3Cpath style='fill:%23FCD69A;' d='M512,2.487c0,0-2.588,95.484-78.121,153.56c-9.652,7.428-20.504,14.249-32.704,20.167c-29.887,14.505-64.654-7.455-64.654-40.672v-0.526c0-21.017,14.573-39.013,35.01-43.947c11.863-2.871,22.998-6.457,33.392-10.555v-0.013C475.251,52.838,512,2.487,512,2.487z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='fill:%23D3A562;' d='M169.602,157.88c-11.162,19.561-36.344,29.226-58.79,18.334c-12.187-5.918-23.039-12.739-32.704-20.167C2.575,97.972,0,2.487,0,2.487s0,0.013,0.027,0.04C1.052,5.022,49.461,120.471,169.602,157.88z'/%3E%3Cpath style='fill:%23D3A562;' d='M342.398,157.88c11.162,19.561,36.344,29.226,58.79,18.334c12.187-5.918,23.039-12.739,32.704-20.167C509.425,97.972,512,2.487,512,2.487s0,0.013-0.027,0.04C510.949,5.022,462.539,120.471,342.398,157.88z'/%3E%3C/g%3E%3Cpath style='fill:%234D4D4D;' d='M322.042,396.962c0,11.283-2.831,21.906-7.819,31.194c-7.347,13.697-19.372,24.481-33.958,30.237c-2.4,0.971-4.88,1.779-7.414,2.454c-2.373,0.62-4.799,1.119-7.266,1.469c-3.141,0.458-6.336,0.701-9.598,0.701c-3.249,0-6.444-0.229-9.571-0.701c-2.467-0.351-4.894-0.849-7.266-1.469c-2.534-0.661-5.015-1.483-7.414-2.44c-14.586-5.756-26.638-16.554-33.985-30.251c-4.988-9.288-7.819-19.911-7.819-31.195c0-21.286,10.057-25.708,25.694-25.681c2.346,0,4.826,0.108,7.401,0.27c2.386,0.148,4.853,0.337,7.414,0.553c5.689,0.472,11.782,1.025,18.159,1.294c2.427,0.094,4.894,0.162,7.387,0.162H256c2.507,0,4.974-0.067,7.401-0.162c6.363-0.27,12.456-0.822,18.145-1.294c2.561-0.216,5.042-0.404,7.414-0.553c2.588-0.162,5.055-0.27,7.401-0.27C311.986,371.254,322.042,375.676,322.042,396.962z'/%3E%3Cpath style='fill:%23C42610;' d='M314.224,428.156c-7.347,13.696-19.372,24.481-33.958,30.237c-2.4,0.971-4.88,1.779-7.414,2.454c-2.373,0.62-4.799,1.119-7.266,1.469c-3.141,0.458-6.336,0.701-9.598,0.701c-3.249,0-6.444-0.229-9.571-0.701c-2.467-0.35-4.894-0.849-7.266-1.469c-2.534-0.661-5.015-1.483-7.414-2.44c-14.586-5.756-26.638-16.554-33.985-30.251c7.347-13.696,19.372-24.481,33.958-30.237c2.4-0.971,4.88-1.779,7.414-2.453c2.373-0.62,4.799-1.119,7.266-1.469c3.141-0.458,6.336-0.701,9.598-0.701c3.249,0,6.444-0.229,9.571,0.701c2.467,0.351,4.894,0.849,7.266,1.469c2.534,0.661,5.015,1.483,7.414,2.44C294.825,403.662,306.876,414.46,314.224,428.156z'/%3E%3Cg%3E%3Cpath style='fill:%23F2F2F2;' d='M230.44,372.103v32.462c0,4.098-3.316,7.414-7.414,7.414s-7.414-3.316-7.414-7.414v-33.014c0-0.094,0-0.189,0.013-0.27c2.346,0,4.826,0.108,7.401,0.27C225.412,371.699,227.879,371.888,230.44,372.103z'/%3E%3Cpath style='fill:%23F2F2F2;' d='M263.414,373.559v31.006c0,4.098-3.316,7.414-7.414,7.414s-7.414-3.316-7.414-7.414v-31.006c0-0.054,0-0.108,0.013-0.162c2.427,0.094,4.894,0.162,7.387,0.162H256c2.507,0,4.974-0.067,7.401-0.162C263.414,373.451,263.414,373.505,263.414,373.559z'/%3E%3Cpath style='fill:%23F2F2F2;' d='M296.375,371.47v33.095c0,4.098-3.316,7.414-7.414,7.414s-7.414-3.316-7.414-7.414v-32.462c2.561-0.216,5.042-0.404,7.414-0.553c2.588-0.162,5.055-0.27,7.401-0.27C296.375,371.348,296.375,371.402,296.375,371.47z'/%3E%3Cpath style='fill:%23F2F2F2;' d='M246.563,432.875v27.973c0,0.499-0.054,0.998-0.148,1.469c-2.467-0.35-4.894-0.849-7.266-1.469c-2.534-0.661-5.015-1.483-7.414-2.44v-25.533c0-4.098,3.316-7.414,7.414-7.414S246.563,428.776,246.563,432.875z'/%3E%3Cpath style='fill:%23F2F2F2;' d='M280.265,432.875v25.519c-2.4,0.971-4.88,1.779-7.414,2.454c-2.373,0.62-4.799,1.119-7.266,1.469c-0.094-0.472-0.148-0.971-0.148-1.469v-27.973c0-4.098,3.316-7.414,7.414-7.414S280.265,428.776,280.265,432.875z'/%3E%3C/g%3E%3Cpath style='fill:%23D3321C;' d='M279.241,264.365v64.236c0,10.313-8.345,18.671-18.657,18.671h-9.18c-10.313,0-18.671-8.358-18.671-18.671v-64.236'/%3E%3Cg%3E%3Cpath style='fill:%23E54728;' d='M308.278,302.906c0,0-1.793,38.299,61.567,66.609c0,0-37.454-26.881-26.669-66.424'/%3E%3Cpath style='fill:%23E54728;' d='M203.708,302.906c0,0,1.793,38.299-61.567,66.609c0,0,37.454-26.881,26.669-66.424'/%3E%3C/g%3E%3Cg%3E%3Cpath style='fill:%23666666;' d='M217.909,280.597c-7.958,0-15.915-3.025-21.976-9.077l-34.451-34.464c-3.157-3.149-7.862-4.055-11.968-2.3l-5.798,2.497c-5.125,2.21-11.076-0.159-13.284-5.289c-2.208-5.129,0.159-11.076,5.289-13.284l5.824-2.507c11.763-5.028,25.192-2.443,34.232,6.577l34.453,34.466c4.234,4.228,11.127,4.229,15.359-0.001c3.949-3.947,10.349-3.947,14.299,0c3.949,3.949,3.947,10.351,0,14.299C233.825,277.569,225.868,280.597,217.909,280.597z'/%3E%3Cpath style='fill:%23666666;' d='M294.075,280.597c-7.958,0-15.915-3.025-21.976-9.077c-3.953-3.946-3.958-10.347-0.012-14.298c3.944-3.953,10.347-3.958,14.298-0.012c4.241,4.236,11.134,4.237,15.365,0.005l34.457-34.457c9.035-9.035,22.462-11.622,34.207-6.593l5.843,2.516c5.128,2.208,7.497,8.156,5.289,13.284c-2.208,5.129-8.155,7.499-13.284,5.289l-5.824-2.507c-4.02-1.721-8.826-0.797-11.932,2.312l-34.457,34.457C309.993,277.569,302.034,280.597,294.075,280.597z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='fill:%23F2F2F2;' d='M380.158,272.116c8.493,19.844-0.701,42.828-20.545,51.321c-19.844,8.506-42.828-0.688-51.335-20.531L380.158,272.116z'/%3E%3Cpath style='fill:%23F2F2F2;' d='M131.829,272.116l71.88,30.79c-8.506,19.844-31.491,29.038-51.335,20.531C132.53,314.945,123.322,291.96,131.829,272.116z'/%3E%3C/g%3E%3C/svg%3E"
+        type="image/svg+xml">
+
+    <meta name="description"
+        content="Søren Riisager's ToolBox: Free SEO tools for keyword research, technical SEO, SERP analysis, and specialized tools for clients. Optimize your website effectively.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://www.tulabot.com/#website",
+      "name": "Riisager's ToolBox",
+      "url": "https://www.tulabot.com/",
+      "description": "Søren Riisager's ToolBox: Free SEO tools for keyword research, technical SEO, SERP analysis, and specialized tools for clients. Optimize your website effectively.",
+      "publisher": {
+        "@id": "https://www.tulabot.com/#organization"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": ["CollectionPage", "AboutPage"],
+      "@id": "https://www.tulabot.com/#webpage",
+      "url": "https://www.tulabot.com/",
+      "name": "Riisager's ToolBox - Free & Client SEO Tools",
+      "description": "Explore Søren Riisager's collection of free SEO tools for keyword research, technical SEO, and SERP analysis, plus exclusive client-only tools for advanced automation and product descriptions.",
+      "isPartOf": {
+        "@id": "https://www.tulabot.com/#website"
+      },
+      "about": {
+        "@id": "https://www.tulabot.com/#person"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.tulabot.com/"
+      },
+      "inLanguage": "en-US",
+      "datePublished": "2025-06-13",
+      "dateModified": "2025-09-16",
+      "author": {
+        "@id": "https://www.tulabot.com/#person"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://www.tulabot.com/#organization",
+      "name": "tulabot.com",
+      "url": "https://www.tulabot.com/",
+      "sameAs": [
+        "https://www.doba.dk/",
+        "https://www.linkup.dk/"
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.tulabot.com/#person",
+      "name": "Søren Riisager",
+      "url": "https://www.tulabot.com/",
+      "image": "https://www.tulabot.com/soren-riisager.jpg",
+      "sameAs": "https://www.linkedin.com/in/riisager",
+      "jobTitle": "SEO Geek & Owner",
+      "worksFor": {
+        "@id": "https://www.tulabot.com/#organization"
+      },
+      "knowsAbout": ["SEO", "Keyword Research", "Technical SEO", "SERP Analysis", "Automation"],
+      "description": "Søren Riisager has worked with search for over 20 years, helping businesses understand and leverage Google to grow. He specializes in creating practical tools and solutions based on real data."
+    }
+  ]
+}
+  </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Riisager's ToolBox</h1>
+        <div class="tools-grid">
+            <a class="tool-card" href="https://www.askedonce.com" target="_blank" rel="noopener">
+                <span class="tool-icon" aria-hidden="true">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 472.615 472.615"
+                        style="fill:#FF0000;" xml:space="preserve">
+                        <g>
+                            <g>
+                                <polygon points="472.615,384 472.615,334.736 0,334.736 0,384 147.692,384 147.692,433.231 108.308,433.231 108.308,452.923 
+            364.308,452.923 364.308,433.231 324.923,433.231 324.923,384    " />
+                            </g>
+                        </g>
+                        <g>
+                            <g>
+                                <path d="M0,19.692v295.351h472.615V19.692H0z M388.077,226.428h-37.693l-15.615-15.616l-34.462,34.462l-28.693-28.692h-54.503
+            c-14.535,29.13-44.561,49.231-79.266,49.231c-48.861,0-88.615-39.75-88.615-88.615s39.755-88.615,88.615-88.615
+            c38.493,0,71.242,24.715,83.445,59.077h166.786l39.385,39.385L388.077,226.428z" />
+                            </g>
+                        </g>
+                        <g>
+                            <g>
+                                <circle cx="108.308" cy="177.201" r="19.692" />
+                            </g>
+                        </g>
+                    </svg>
+                </span>
+                <span class="tool-title">AskedOnce.com</span>
+                <span class="tool-desc">Free keyword research on real data</span>
+            </a>
+            <a class="tool-card" href="https://impersonal.io" target="_blank" rel="noopener">
+                <span class="tool-icon" aria-hidden="true">
+                    <svg version="1.1" id="_x35_" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve">
+                        <g>
+                            <g>
+                                <path style="fill:#231815;" d="M255.461,247.274c-0.367,0.007-0.734,0.007-1.101,0l-128.201-2.496
+            c-8.656-0.17-16.912,3.634-22.405,10.325c-5.493,6.691-7.621,15.53-5.773,23.986l10.371,47.416
+            c2.63,12.013,12.727,20.953,24.974,22.105l63.417,5.966c11.106,1.048,21.797-4.541,27.277-14.262l12.8-22.708
+            c5.012-8.89,31.161-8.89,36.173,0l12.807,22.708c5.473,9.721,16.165,15.31,27.277,14.262l63.41-5.966
+            c12.253-1.152,22.344-10.091,24.98-22.105l10.365-47.416c1.849-8.456-0.273-17.296-5.766-23.986
+            c-5.493-6.691-13.748-10.495-22.405-10.325L255.461,247.274z" />
+                                <path style="fill:#595758;" d="M412.007,201.687H97.8c0,0,0.521-3.69,1.422-9.977c1.895-13.115,5.439-37.628,9.33-63.59
+            c6.407-42.667,13.762-89.299,16.258-96.033c4.739-12.791,28.425-46.057,82.911-25.585c17.213,6.457,32.77,8.579,47.185,8.479
+            c14.436,0.1,29.973-2.022,47.206-8.479c54.486-20.472,78.172,12.794,82.918,25.585c2.489,6.734,9.844,53.366,16.231,96.033
+            c3.891,25.962,7.428,50.475,9.323,63.59C411.487,197.997,412.007,201.687,412.007,201.687z" />
+                                <path style="fill:#595758;" d="M499.463,234.104c-15.557-10.265-100.878-44.576-100.878-44.576H256.328H114.072
+            c0,0-85.027,34.772-100.884,44.576c-22.852,14.139-12.207,44.576,3.337,44.576c15.544,0,239.804,0,239.804,0s224.261,0,239.805,0
+            C514.013,278.68,518.998,246.998,499.463,234.104z" />
+                                <path style="fill:#FF0000;" d="M410.585,195.451H99.223c1.895-13.118,5.439-37.628,9.33-63.587h292.709
+            C405.153,157.823,408.69,182.333,410.585,195.451z" />
+                            </g>
+                            <path style="opacity:0.1;fill:#3E3A39;"
+                                d="M499.463,234.104c-11.859-7.825-64.224-29.606-88.464-39.531
+          c-0.127-0.888-0.26-1.825-0.414-2.863c-1.895-13.115-5.432-37.628-9.323-63.59c-6.387-42.667-13.742-89.299-16.231-96.033
+          c-4.746-12.791-28.432-46.057-82.918-25.585c-17.232,6.457-32.77,8.579-47.206,8.479v295.956c7.796,0,15.584,2.223,18.087,6.667
+          l12.807,22.708c5.473,9.721,16.165,15.31,27.277,14.262l63.41-5.966c12.253-1.152,22.344-10.091,24.98-22.105l10.365-47.416
+          c0.034-0.137,0.04-0.273,0.067-0.41c42.36,0,78.333,0,84.233,0C514.013,278.68,518.998,246.998,499.463,234.104z" />
+                        </g>
+                    </svg>
+                </span>
+                <span class="tool-title">Impersonal.io</span>
+                <span class="tool-desc">Run Google searches without personalization in any country</span>
+            </a>
+            <a class="tool-card" href="https://bc.tulabot.com" target="_blank" rel="noopener">
+                <span class="tool-icon" aria-hidden="true">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" fill="#FF0000" viewBox="0 0 460 460"
+                        style="enable-background:new 0 0 460 460;" xml:space="preserve">
+                        <g>
+                            <path d="M359.451,55.662c-17.117-17.733-37.112-31.592-59.43-41.19C277.694,4.869,254.135,0,230,0s-47.693,4.869-70.022,14.472
+          c-22.317,9.598-42.312,23.457-59.429,41.19C64.135,93.387,44.082,146.14,44.082,204.204c0,59.534,20.215,122.633,55.463,173.117
+          C136.229,429.865,183.779,460,230,460s93.771-30.135,130.455-82.678c35.247-50.485,55.463-113.583,55.463-173.117
+          C415.918,146.14,395.865,93.387,359.451,55.662z M344.057,365.873C311.166,412.982,269.594,440,230,440
+          c-39.594,0-81.166-27.018-114.057-74.127C83.469,319.36,64.082,258.923,64.082,204.204C64.082,84.559,149.567,20,230,20
+          c80.433,0,165.918,64.559,165.918,184.204C395.918,258.923,376.531,319.36,344.057,365.873z" />
+                            <path d="M218.818,250.821c-0.627-0.518-63.23-52.502-108.156-109.685c-2.384-3.035-6.301-4.427-10.068-3.576
+          c-3.765,0.851-6.704,3.792-7.551,7.558c-6.729,29.899-5.932,64.043,2.188,93.677c10.46,38.171,32.418,66.797,63.502,82.784
+          c1.449,0.745,3.016,1.107,4.571,1.107c2.589,0,5.145-1.005,7.065-2.921c1.34-1.337,33.021-33.003,50.011-55.15
+          C223.656,260.346,222.966,254.25,218.818,250.821z M161.546,300.233c-45.331-27.746-56.097-85.693-52.268-129.264
+          c34.499,40.377,73.232,75.035,89.286,88.892C186.34,274.566,169.878,291.713,161.546,300.233z" />
+                            <path d="M366.957,145.118c-0.848-3.766-3.786-6.707-7.552-7.558c-3.767-0.851-7.684,0.541-10.067,3.576
+          c-44.881,57.127-107.528,109.167-108.156,109.686c-4.146,3.429-4.837,9.524-1.563,13.793c16.99,22.147,48.67,53.813,50.011,55.15
+          c1.92,1.916,4.476,2.921,7.065,2.921c1.555,0,3.122-0.362,4.57-1.107c31.084-15.987,53.043-44.614,63.503-82.784
+          C372.889,209.162,373.687,175.018,366.957,145.118z M298.453,300.234c-8.329-8.518-24.79-25.663-37.017-40.373
+          c16.05-13.854,54.783-48.511,89.285-88.891C354.55,214.541,343.784,272.488,298.453,300.234z" />
+                        </g>
+                    </svg>
+                </span>
+                <span class="tool-title">bc.tulabot.com</span>
+                <span class="tool-desc">Free Bulk-check HTTP status of +1000 URLs</span>
+            </a>
+
+
+
+
+
+
+
+            <a class="tool-card" href="https://www.rankypanky.com" target="_blank" rel="noopener">
+                <span class="tool-icon" aria-hidden="true">
+                    <svg width="40" height="40" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="h-8 w-8 text-primary">
+                        <path
+                            d="M97.8357 54.6682C177.199 59.5311 213.038 52.9891 238.043 52.9891C261.298 52.9891 272.24 129.465 262.683 152.048C253.672 173.341 100.331 174.196 93.1919 165.763C84.9363 156.008 89.7095 115.275 89.7095 101.301"
+                            stroke="currentColor" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                        <path d="M98.3318 190.694C-10.6597 291.485 121.25 273.498 148.233 295.083" stroke="currentColor"
+                            stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round">
+                        </path>
+                        <path d="M98.3301 190.694C99.7917 213.702 101.164 265.697 100.263 272.899" stroke="currentColor"
+                            stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round">
+                        </path>
+                        <path d="M208.308 136.239C208.308 131.959 208.308 127.678 208.308 123.399" stroke="currentColor"
+                            stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round">
+                        </path>
+                        <path d="M177.299 137.271C177.035 133.883 177.3 126.121 177.3 123.399" stroke="currentColor"
+                            stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round">
+                        </path>
+                        <path d="M203.398 241.72C352.097 239.921 374.881 226.73 312.524 341.859" stroke="currentColor"
+                            stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round">
+                        </path>
+                        <path d="M285.55 345.448C196.81 341.85 136.851 374.229 178.223 264.509" stroke="currentColor"
+                            stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round">
+                        </path>
+                        <path d="M180.018 345.448C160.77 331.385 139.302 320.213 120.658 304.679" stroke="currentColor"
+                            stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round">
+                        </path>
+                        <path d="M218.395 190.156C219.024 205.562 219.594 220.898 219.594 236.329" stroke="currentColor"
+                            stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round">
+                        </path>
+                        <path d="M218.395 190.156C225.896 202.037 232.97 209.77 241.777 230.329" stroke="currentColor"
+                            stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round">
+                        </path>
+                    </svg>
+                </span>
+                <span class="tool-title">RankyPanky.com</span>
+                <span class="tool-desc">chatGPT AI LLM tracking with reverse engineering</span>
+            </a>
+
+
+
+
+
+
+
+
+            <a class="tool-card" href="https://www.pimplify.com" target="_blank" rel="noopener">
+                <span class="tool-icon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" color="#48b1b1" version="1.1"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" transform="matrix(-1,0,0,1,0,0)">
+                        <path
+                            d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.377 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z">
+                        </path>
+                        <path d="M20 3v4"></path>
+                        <path d="M22 5h-4"></path>
+                        <path d="M4 17v2"></path>
+                        <path d="M5 18H3"></path>
+                    </svg>
+                </span>
+                <span class="tool-title">PIMplify.com</span>
+                <span class="tool-desc">Bulk AI Product descriptions generator</span>
+            </a>
+
+            <a class="tool-card" href="https://rm.tulabot.com" target="_blank" rel="noopener">
+                <span class="tool-icon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 2" id="Layer_2" viewBox="0 0 2050 2050"
+                        class="w-8 h-8">
+                        <path fill="#3f51b5"
+                            d="M1084.6,461.6a146,146,0,0,1-92.4,184.6,144.5,144.5,0,0,1-28.5,6.4l61.9,185.7L826.7,904.5a143.8,143.8,0,0,0-5.6-69.7C795.7,758.3,713,717,636.5,742.4a146.1,146.1,0,0,0-55,243.8l-198.8,66.2L214.8,548.3a146.2,146.2,0,0,1,92.6-185L811.5,195.4l61.8,185.7a146.3,146.3,0,0,1,211.3,80.5Z">
+                        </path>
+                        <path fill="#2196f3"
+                            d="M1084.6,461.6a146,146,0,0,0-86.7-90.4,146.1,146.1,0,0,1-53.6,245.2,143.5,143.5,0,0,1-28.4,6.4l61.8,185.7L826.9,858.7a143.5,143.5,0,0,1-.2,45.8l198.9-66.2L963.7,652.6a144.5,144.5,0,0,0,28.5-6.4A146,146,0,0,0,1084.6,461.6Z">
+                        </path>
+                        <path fill="#0352f4"
+                            d="M303.5,604.1a146.2,146.2,0,0,1,92.6-185l441-146.9-25.6-76.8L307.4,363.3a146.2,146.2,0,0,0-92.6,185l167.9,504.1,63-21Z">
+                        </path>
+                        <path fill="#4fcc4e"
+                            d="M1842.7,1177H1636.9a146,146,0,1,1-278.9,60.3,144.7,144.7,0,0,1,13-60.3H1165.1V981.3a146,146,0,1,0,0-286.2V499.4h531.3a146.3,146.3,0,0,1,146.3,146.3Z">
+                        </path>
+                        <path fill="#9ecc3a"
+                            d="M1215.3,1012.8a186.5,186.5,0,0,0,36.1,3.6A181.6,181.6,0,0,0,1433,834.8c0-100.3-81.3-181.5-181.6-181.5a186.5,186.5,0,0,0-36.1,3.5V499.4h-50.2V695.1a145.9,145.9,0,1,1,0,286.2V1177h50.2Z">
+                        </path>
+                        <path fill="#f4c23f"
+                            d="M958.6,1515.8a146,146,0,0,0,145.9,146,144.3,144.3,0,0,0,60.6-13.2v206H633.8a146.3,146.3,0,0,1-146.3-146.3V1177H697.1a146,146,0,1,1,258.4,0h209.6v206a144.3,144.3,0,0,0-60.6-13.2A146,146,0,0,0,958.6,1515.8Z">
+                        </path>
+                        <path fill="#fad564"
+                            d="M955.5,1177a146,146,0,0,0-257.7-137.3,146.1,146.1,0,0,1,206.3,192h209.5v138.4a143.1,143.1,0,0,1,51.5,12.9V1177Z">
+                        </path>
+                        <path fill="#f4a93f"
+                            d="M704.5,1789.4a146.3,146.3,0,0,1-146.3-146.3V1177H487.5v531.3a146.3,146.3,0,0,0,146.3,146.3h531.3v-65.2Z">
+                        </path>
+                        <path fill="#de3226"
+                            d="M1842.7,1177v531.3a146.3,146.3,0,0,1-146.3,146.3H1165.1v-206a144.3,144.3,0,0,1-60.6,13.2,146,146,0,0,1,0-292,144.3,144.3,0,0,1,60.6,13.2V1177H1371a146,146,0,1,0,278.9,60.3,146.3,146.3,0,0,0-13-60.3Z">
+                        </path>
+                        <path fill="#b11a31"
+                            d="M1529.3,1381.1a150.9,150.9,0,0,0,25.4,2.2A146.1,146.1,0,0,0,1687.6,1177h-50.7a146.3,146.3,0,0,1,13,60.3C1649.9,1309.2,1597.8,1369,1529.3,1381.1Z">
+                        </path>
+                        <path fill="#b11a31" d="M1215.9,1383V1177h-50.8v193.2A144.6,144.6,0,0,1,1215.9,1383Z"></path>
+                        <path fill="#b11a31"
+                            d="M1009.3,1515.8A146,146,0,0,1,1129.9,1372a151.8,151.8,0,0,0-25.4-2.2,146,146,0,0,0,0,292,151.8,151.8,0,0,0,25.4-2.2C1061.4,1647.5,1009.3,1587.7,1009.3,1515.8Z">
+                        </path>
+                        <path fill="#b11a31" d="M1165.1,1661.4v193.2h50.8v-206A144.6,144.6,0,0,1,1165.1,1661.4Z"></path>
+                        <rect fill="#79e318" height="329.42" rx="55.9" ry="55.9" width="111.8" x="1730.9" y="723">
+                        </rect>
+                        <rect fill="#f44533" height="277.54" rx="55.9" ry="55.9" width="111.8" x="1730.9" y="1438.9">
+                        </rect>
+                    </svg>
+                </span>
+                <span class="tool-title">rm.tulabot.com</span>
+                <span class="tool-desc">Free redirect mapping powered by TF-IDF and AI</span>
+            </a>
+            <a class="tool-card" href="https://ff.tulabot.com" target="_blank" rel="noopener">
+                <span class="tool-icon" aria-hidden="true">
+                    <svg fill="#FFA500" viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                            <path
+                                d="m49.9 10.6c-2.1-4.1-7.4-11.7-17.2-7.2-6.1 2.8-9.5 4.4-9.5 4.4l-8.8 3.8c-2.5 1.2-7.9-0.5-11-1.6-0.9-0.3-1.7 0.6-1.3 1.5 2.1 4.1 7.4 11.7 17.2 7.2 6.1-2.8 18.3-8.1 18.3-8.1 2.5-1.2 7.9 0.5 11 1.6 0.9 0.2 1.7-0.7 1.3-1.6z m-21.1 12.8c-1.1 0.6-5.5 2.6-5.5 2.6l-4.4 1.9c-2.2 1.2-6.9-0.4-9.7-1.5-0.8-0.4-1.5 0.6-1.1 1.4 1.8 4 6.5 11.2 15.1 6.8 5.4-2.7 9.9-4.5 9.9-4.5 2.2-1.2 6.9 0.4 9.7 1.5 0.8 0.3 1.5-0.6 1.1-1.5-1.8-3.9-6.5-11.1-15.1-6.7z m-3.2 17.7c-0.9 0.5-2.4 1.4-2.4 1.4-1.7 1.1-5.2-0.3-7.3-1.3-0.6-0.3-1.1 0.6-0.8 1.4 1.3 3.6 4.8 10.1 11.3 6.1 2.4-1.5 2.4-1.4 2.4-1.4 1.8-0.9 5.2 0.3 7.3 1.3 0.6 0.3 1.1-0.6 0.8-1.4-1.3-3.6-4.6-9.8-11.3-6.1z">
+
+                            </path>
+                        </g>
+                        <path d="m25.9 25.1">
+
+                        </path>
+                    </svg>
+                </span>
+                <span class="tool-title">FeedForge AI</span>
+                <span class="tool-desc">Automates, enriches, and optimizes your product data for Google Shopping.</span>
+            </a>
+        </div>
+
+        <div class="clients-only-section">
+            <h2>Built for clients</h2>
+            <div class="tools-grid">
+                <a class="tool-card" href="https://n8n.tulabot.com" target="_blank" rel="noopener">
+                    <span class="tool-icon" aria-hidden="true">
+                        <svg fill="none" viewBox="0 0 32 32">
+                            <path
+                                d="M16 4C9.375 4 4 9.375 4 16C4 22.625 9.375 28 16 28C22.625 28 28 22.625 28 16C28 9.375 22.625 4 16 4ZM16 6C21.5 6 26 10.5 26 16C26 21.5 21.5 26 16 26C10.5 26 6 21.5 6 16C6 10.5 10.5 6 16 6Z"
+                                fill="#ff7f50" />
+                            <path
+                                d="M16 10C13.791 10 12 11.791 12 14C12 16.209 13.791 18 16 18C18.209 18 20 16.209 20 14C20 11.791 18.209 10 16 10Z"
+                                fill="#ff7f50" />
+                            <circle cx="12" cy="20" r="1.5" fill="#ff7f50" />
+                            <circle cx="20" cy="20" r="1.5" fill="#ff7f50" />
+                            <path d="M14.5 22.5L17.5 22.5" stroke="#ff7f50" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </span>
+                    <span class="tool-title">Agent Automation</span>
+                    <span class="tool-desc">n8n workflow hosting for clients</span>
+                </a>
+                <a class="tool-card" href="mailto:sr@doba.dk" target="_blank" rel="noopener">
+                    <span class="tool-icon" aria-hidden="true">
+                        <svg fill="none" viewBox="0 0 32 32">
+                            <path
+                                d="M7 5H25C26.1046 5 27 5.89543 27 7V25C27 26.1046 26.1046 27 25 27H7C5.89543 27 5 26.1046 5 25V7C5 5.89543 5.89543 5 7 5Z"
+                                stroke="#ff5733" stroke-width="2" />
+                            <path d="M10 9L22 9" stroke="#ff5733" stroke-width="2" stroke-linecap="round" />
+                            <path d="M10 13L22 13" stroke="#ff5733" stroke-width="2" stroke-linecap="round" />
+                            <path d="M10 17L18 17" stroke="#ff5733" stroke-width="2" stroke-linecap="round" />
+                            <path d="M10 21L14 21" stroke="#ff5733" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </span>
+                    <span class="tool-title">Product Description Automation</span>
+                    <span class="tool-desc">Automated product description generation tool, $0.04 per product</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer">
+            &copy; 2025 tulabot.com &middot; Built with pain.
+        </div>
+        <div class="soren">
+            I am <strong>Søren Riisager</strong>, an SEO Geek from Denmark. I’ve worked with search for over 20 years,
+            helping people understand how Google works and how to use that knowledge to grow. Along the way, I’ve built
+            free tools for keyword research, technical SEO, and SERP analysis. My focus is always on clarity,
+            usefulness, and real data.
+            You can find me on <a href="https://www.linkedin.com/in/riisager" target="_blank">LinkedIn</a>.
+        </div>
+    </div>
+</body>
+
+</html>

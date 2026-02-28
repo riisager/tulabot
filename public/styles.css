@@ -1,0 +1,225 @@
+:root {
+  --primary: #105fa2;
+  --primary-glow: rgba(16, 95, 162, 0.4);
+  --accent: #E54728;
+  --bg-gradient: linear-gradient(135deg, #f7f8fa 0%, #e9edf3 100%);
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.4);
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg-gradient);
+  background-attachment: fixed;
+  color: #21242a;
+  overflow-x: hidden;
+}
+
+/* Animated Mesh Background */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:
+    radial-gradient(circle at 10% 20%, rgba(16, 95, 162, 0.05) 0%, transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(229, 71, 40, 0.05) 0%, transparent 40%);
+  z-index: -1;
+  animation: mesh-float 20s ease-in-out infinite alternate;
+}
+
+@keyframes mesh-float {
+  0% {
+    transform: scale(1) translate(0, 0);
+  }
+
+  50% {
+    transform: scale(1.1) translate(20px, -20px);
+  }
+
+  100% {
+    transform: scale(1) translate(-20px, 20px);
+  }
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  margin-bottom: 2.5rem;
+  background: linear-gradient(to right, #105fa2, #E54728);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  animation: fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto 4rem auto;
+}
+
+.tool-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  border-radius: 24px;
+  padding: 2.5rem;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+}
+
+.tool-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, transparent 0%, rgba(16, 95, 162, 0.03) 100%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tool-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  border-color: var(--primary);
+  box-shadow: 0 20px 40px rgba(16, 95, 162, 0.12);
+}
+
+.tool-card:hover::before {
+  opacity: 1;
+}
+
+.tool-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1.5rem;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+  transition: transform 0.3s ease;
+}
+
+.tool-card:hover .tool-icon {
+  transform: rotate(5deg) scale(1.1);
+}
+
+.tool-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: var(--primary);
+  letter-spacing: -0.02em;
+}
+
+.tool-desc {
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: #4a5568;
+  opacity: 0.9;
+}
+
+.clients-only-section {
+  width: 100%;
+  margin-top: 4rem;
+  padding-top: 4rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.clients-only-section h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--primary);
+  letter-spacing: -0.03em;
+}
+
+.footer {
+  margin-top: 5rem;
+  font-size: 0.9rem;
+  color: #718096;
+  text-align: center;
+  font-weight: 500;
+}
+
+.soren {
+  margin-top: 3rem;
+  padding: 2.5rem;
+  max-width: 700px;
+  border-radius: 32px;
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  color: #2d3748;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+}
+
+.soren a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 700;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.soren a:hover {
+  border-color: var(--primary);
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 640px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .tool-card {
+    padding: 2rem;
+  }
+
+  .wrapper {
+    padding: 2rem 1rem;
+  }
+}

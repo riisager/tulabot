@@ -1,0 +1,12 @@
+# Cloudflare Pages
+.wrangler/
+dist/
+.dev.vars
+
+# IDEs
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
